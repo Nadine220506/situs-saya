@@ -1,0 +1,115 @@
+nav{
+    display: flex;
+    padding-top: 10px;
+}
+
+.skills-section h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.skills-section .skill {
+    margin-bottom: 15px;
+}
+.skills-section .skill-title {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+.skills-section .progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.skills-section .progress-bar .progress {
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+.text-md-center {
+    text-align: center;
+    font-size: 3cm;
+    margin-left: 10cm;
+    margin-right: 10cm;
+}
+.profile-pic {
+    width: 8cm;
+    height: 8cm;
+    border-radius: 60%;
+    margin-top: 1cm;
+    margin-bottom: 0cm;
+    margin-left: 11cm;
+    margin-right: 11cm;
+}
+.destination{
+    background-color: #212121;
+    height: 200vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    position: relative;
+    flex-direction: column;
+}
+.destination-title{
+    position: absolute;
+    font-size: 3rem;
+    color: #f8fdfd;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    top: 50px;
+}
+.destination-box-list{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.image-destination{
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.image-destination img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+.image-destination-teks{
+    position: absolute;
+    color: #f8fdfd;
+    text-align: center;
+    z-index: 100;
+    font-size: 1.5rem;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.8;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+.image-destination:hover{
+    transform: scale(1.1);
+}
+.image-destination:hover .image-destination-teks{
+    opacity: 1;
+}
